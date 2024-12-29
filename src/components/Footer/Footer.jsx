@@ -43,7 +43,7 @@ export default function Footer() {
         <div id="footer-logo">
           <div id="f-logo">
             {/* <img src={logo} alt="amazon-logo" /> */}
-            <h2>Online Shoping</h2>
+            <h2>Online Shopping</h2>
           </div>
         </div>
       </div>
