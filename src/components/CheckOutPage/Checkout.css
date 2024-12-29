@@ -12,7 +12,6 @@
   .add-new-address-btn{
     border: none;
     outline: none;
-    /* background-color: #ffffff; */
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -25,7 +24,6 @@
   
   .delivery-address{
     margin-top: 20px;
-    /* background-color: #ffffff; */
     border-radius: 15px;
     padding: 15px;
   }
@@ -64,7 +62,6 @@
     margin:  0px 10px;
     font-size: 16px;
     cursor: pointer;
-    /* background-color: #ffffff; */
     transition: .3s ease;
   }
   .icon-btn:hover{
@@ -108,7 +105,6 @@
 }
 
 .address-form-container {
-  /* background-color: #fff; */
   padding: 20px;
   border-radius: 8px;
   width: 90%;
@@ -174,10 +170,8 @@
   flex-direction: column;
   margin: 15px 0px;
   padding: 20px;
-  /* width: 60%; */
   border: 1px solid #ccc;
   border-radius: 15px;
-  /* background-color: #ffffff; */
 }
 .payment-container-div.light-mode {
   background-color: #ffffff;
@@ -215,7 +209,6 @@
 }
 
 .upi-options {
-  /* margin-top: 10px; */
   padding-left: 40px;
 }
 
@@ -226,9 +219,7 @@
 }
 
 .upi-options input[type="text"] {
-  /* margin-top: 5px; */
   padding: 5px;
-  /* width: 100%; */
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -278,7 +269,6 @@
 }
 
 .popup-content {
-  /* background-color: white; */
   padding: 20px;
   border-radius: 8px;
   text-align: center;

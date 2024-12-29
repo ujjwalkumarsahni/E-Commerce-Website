@@ -4,9 +4,16 @@ import "./Marketplace.css";
 import Card from "../AllCard/Card.jsx";
 import FilterComponent from "./FilterComponent.jsx";
 import { MarketEffectCard } from "../ShimmerEffect/MarketEffectCard.jsx";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Marketplace = () => {
-  const {isDarkMode} = useOutletContext();
+  const { isDarkMode } = useOutletContext();
+
+  const [filterToggle, setFilterToggel] = useState(false);
+
+  const handFilterToggle = () => {
+    setFilterToggel(!filterToggle);
+  };
   // States for products and filters
   const [marketProducts, setMarketProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -34,7 +41,7 @@ const Marketplace = () => {
       })
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
-  
+
   useEffect(() => {
     let filtered = marketProducts;
 
@@ -100,11 +107,19 @@ const Marketplace = () => {
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters);
   };
-  
+
   return (
-    <div className={`marketplace_container ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+    <div
+      className={`marketplace_container ${
+        isDarkMode ? "dark-mode" : "light-mode"
+      }`}
+    >
       {/* Filter Section */}
-      <div className={`marketplace_filter ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+      <div
+        className={`marketplace_filter ${filterToggle ? "visible" : ""} ${
+          isDarkMode ? "dark-mode" : "light-mode"
+        }`}
+      >
         <FilterComponent onFilterChange={handleFilterChange} />
       </div>
 
@@ -112,22 +127,32 @@ const Marketplace = () => {
       <div className="marketplace_product">
         <div className="marketplace_header">
           <p>Buy Now</p>
+          <div className="hamburger-filter" onClick={handFilterToggle}>
+            {filterToggle ? (
+              <FaTimes className="hamburger-icon-filter" />
+            ) : (
+              <FaBars className="hamburger-icon-filter" />
+            )}
+          </div>
         </div>
 
         <div className="marketplace_card">
-          {filteredProducts==0 ? <MarketEffectCard /> :
-          filteredProducts.map((product) => (
-            <Card
-              key={product.id}
-              id={product.id}
-              title={product.title}
-              price={product.price}
-              image={product.thumbnail}
-              rating={product.rating}
-              reviewlength={product.reviews.length}
-              discountPercentage={product.discountPercentage}
-            />
-          ))}
+          {filteredProducts == 0 ? (
+            <MarketEffectCard />
+          ) : (
+            filteredProducts.map((product) => (
+              <Card
+                key={product.id}
+                id={product.id}
+                title={product.title}
+                price={product.price}
+                image={product.thumbnail}
+                rating={product.rating}
+                reviewlength={product.reviews.length}
+                discountPercentage={product.discountPercentage}
+              />
+            ))
+          )}
         </div>
       </div>
     </div>

@@ -1,39 +1,19 @@
-   .star-rating {
-     display: flex;
-     gap: 4px;
-     margin-top: 8px;
-   }
-
-   .star {
-     font-size: 20px;
-     cursor: pointer;
-     color: #ddd;
-     transition: color 0.2s;
-   }
-
-   .star.filled {
-     color: #ffc107;
-   }
-
-   .review-info {
-     margin-top: 8px;
-     font-size: 0.85rem;
-     color: #555;
-   }
-
-
-
    .card {
      border: 1px solid #ddd;
      border-radius: 8px;
      overflow: hidden;
-     width: 200px;
+     width: 210px;
+     height: 320px;
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
      position: relative;
      background-color: #fff;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
+     padding: 5px;
+   }
+   .card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
    }
 
    .card.light-mode {
@@ -50,7 +30,6 @@
      position: absolute;
      top: 10px;
      right: 10px;
-     /* color: #ff4d4f; */
      font-size: 1.1rem;
      cursor: pointer;
    }
@@ -61,12 +40,12 @@
 
    .card-image img {
      width: 100%;
-     height: 160px;
-     object-fit: cover;
+     height: 150px;
+     object-fit: contain;
    }
 
    .card-details {
-     padding: 14px;
+     padding: 0px 5px;
    }
 
    .card-brand {
@@ -116,6 +95,29 @@
    .add-to-cart-btn:hover {
      background-color: #0056b3;
    }
+   .star-rating {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+  }
+
+  .star {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ddd;
+    transition: color 0.2s;
+  }
+
+  .star.filled {
+    color: #ffc107;
+  }
+
+  .review-info {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #555;
+  }
+
 
    @media screen and (max-width: 1088px) {
      .react-multi-carousel-track {
@@ -147,7 +149,7 @@
 
    @media screen and (max-width: 525px) {
      .card {
-       width: 180px;
+       width: 210px;
      }
 
      .details-btn,
@@ -158,7 +160,26 @@
      }
 
      .react-multi-carousel-track {
-       gap: 10px;
+       gap: 0px;
      }
+     .card-brand {
+      font-size: 1rem;
+    }
+ 
+    .card-price {
+      font-size: .9rem;
+    }
 
+   }
+   @media screen and (max-width: 490px){
+    .card {
+      width: 180px;
+      height: 300px;
+    }
+    .card-image img {
+      height: 130px;
+    }
+    .home-container{
+      padding: 10px;
+    }
    }

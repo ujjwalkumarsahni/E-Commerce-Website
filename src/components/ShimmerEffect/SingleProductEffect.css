@@ -1,8 +1,6 @@
 .effectDetail {
     padding: 10px;
-    /* background-color: #c22525; */
     height: 100vh;
-    /* background-color: #f9f9f9dc; */
 }
 .effectDetail.light-mode {
     background-color: #ffffff;
@@ -14,7 +12,6 @@
     color: #ffffff;
 }
 .effect-btn {
-    /* margin: 5px; */
     padding: .8rem 2rem;
     background-color: #e0e0e0;
     color: white;
@@ -27,10 +24,8 @@
 
 .productdetailscardContainer-effect {
     display: flex;
-    /* background-color: #ffffff; */
     gap: 20px;
     padding: 20px 10px;
-    /* border-bottom: 0.5px solid rgba(0, 0, 1, 0.12); */
 }
 
 .left-effect {
@@ -114,7 +109,6 @@
 
 
 .______effe {
-    /* background-color: #ffffff; */
     width: 100%;
     margin: 0;
 }
@@ -133,7 +127,6 @@
 .border-effect {
     transition: background-color 0.3s ease;
     border: #4c5057;
-    /* background-color: #e0e0e0; */
     width: 94%;
     height: 200px;
     margin: 10px auto;
@@ -150,7 +143,7 @@
     color: #ffffff;
 }
 
-/* **************bannerSliderEffect*************** */
+
 .bannerSliderEffect {
     width: 96%;
     height: 500px;
@@ -162,11 +155,10 @@
     margin-top: 15px;
 }
 
-/* ***********************CardEffect**************************** */
+
 .CardEffect {
     width: 200px;
     height: 330px;
-    /* background-color: #cacaca; */
     border: 1px solid #ddd;
     border-radius: 8px;
     transition: background-color 0.5s ease;
@@ -183,7 +175,6 @@
 }
 
 .CardEffect-container {
-    /* background-color: #ffffff; */
     display: flex;
     flex-direction: column;
     margin: 20px 20px;
@@ -269,5 +260,16 @@
 @media screen and (max-width: 668px) {
     .slider {
         height: 250px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .CardEffect {
+        width: 230px;
+        height: 300px;
+    }
+    .hearde-effectOfCard {
+        margin: 5px 20px;
+        width: 300px;
+        height: 25px;
     }
 }

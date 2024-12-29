@@ -3,7 +3,6 @@
     display: flex;
     margin: 0px 26px;
     border-radius: 15px;
-    /* background-color: #ffffff; */
     gap: 20px;
     border-bottom: .5px solid rgba(0, 0, 1, 0.12);
 }
@@ -68,7 +67,6 @@
 .product-title {
     color: inherit;
     font-size: 23px;
-    /* font-weight: bold; */
 }
 
 .product-price {
@@ -82,7 +80,6 @@
     color: inherit;
     font-size: 18px;
     padding: 0px 5px;
-    /* font-weight: 90; */
 }
 
 .product-rating {
@@ -107,7 +104,6 @@
 
 .some-detail h4 {
     font-size: 19px;
-    /* font-weight: 500; */
 }
 
 .some-detail span {
@@ -184,7 +180,6 @@
 
 @media screen and (max-width: 768px) {
     .productdetailscardContainer {
-        /* width: 100%; */
         flex-direction: column;
     }
 

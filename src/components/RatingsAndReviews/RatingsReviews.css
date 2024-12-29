@@ -28,14 +28,13 @@
   padding: 1rem;
 }
 
-/* Review box styling */
+
 .review-box {
   display: flex;
   gap: .6rem;
   margin: 1rem 0;
 }
 
-/* Avatar styling */
 .avatar {
   display: inline-block;
   vertical-align: middle;
@@ -52,7 +51,7 @@
   border-radius: 100%;
 }
 
-/* Details styling */
+
 .details .name {
   font-size: 1.2rem;
   font-weight: 600;

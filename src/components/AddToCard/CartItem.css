@@ -1,7 +1,6 @@
 .cart-containar{
     position: relative;
     padding: 13px;
-    /* background-color: #ffffff; */
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -51,7 +50,6 @@
 .other-header{
     display: flex;
     justify-content: space-around;
-    /* gap: 50px; */
     text-align: center;
 }
 .other-header h4{
@@ -64,12 +62,7 @@
     align-items: center;
     margin-top: 60px;
 }
-/* .containte{
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
+
 .product-image{
     width: 200px;
 }

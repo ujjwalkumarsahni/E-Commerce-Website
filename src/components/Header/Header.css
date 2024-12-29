@@ -7,7 +7,6 @@
     align-items: center;
     padding: 10px 20px;
     background-color: #ffffff; 
-    /* border-bottom: 2px solid #ddd; */
     z-index: 1000;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
@@ -19,7 +18,7 @@
     background-color: #0F172A;
     color: #ffffff;
   }
-  /* Logo */
+ 
   .logo {
     flex: 0.5;
     background-color: inherit;
@@ -30,7 +29,7 @@
     height: 50px;
   }
   
-  /* Search Bar */
+  
   .search-bar {
     flex: 2;
     display: flex;
@@ -72,7 +71,7 @@
     cursor: pointer;
   }
   
-  /* Navigation */
+ 
   .nav {
     flex: 2;
     display: flex;
@@ -97,7 +96,6 @@
   .nav-account{
     border: none;
     outline: none;
-    /* background-color: #ffffff; */
     cursor: pointer;
   }
   .nav-item:hover,
@@ -110,7 +108,7 @@
     margin-bottom: 3px;
   }
   
-  /* Hamburger Menu */
+
   .hamburger {
     display: none;
     flex: 1;
@@ -142,8 +140,8 @@
     outline: none;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
+  
+  @media screen and (max-width: 768px) {
     .toggle-button b{
       display: none;
     }
@@ -160,12 +158,13 @@
     }
   
     .nav {
-      width: 100%;
-      flex-direction: column;
+      width: 60%;
+      height: 150px;
+      /* flex-direction: column; */
+      border-bottom-right-radius: 40px;
       position: absolute;
-      top: 75px;
+      top: 73px;
       left: -100%;
-      /* background-color: #fff; */
       padding: 10px 0;
     }
     .nav.light-mode{
@@ -195,5 +194,13 @@
         border-radius: 20px;
         font-size: 15px;
       }
+      .logo-img {
+        height: 30px;
+      }
+  }
+  @media screen and (max-width: 535px){
+    .nav{
+      width: 90%;
+    }
   }
   

@@ -1,12 +1,4 @@
-/* FilterComponent.css */
-/* .light-mode{
-  background-color: #ffffff;
-  color: #0F172A;
-}
-.dark-mode{
-  background-color: #334155;
-  color: #8291A5;
-} */
+
   .filter-header {
     display: flex;
     justify-content: space-between;
