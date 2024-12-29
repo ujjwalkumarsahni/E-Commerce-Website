@@ -56,11 +56,15 @@
       width: 180px;
       padding: 10px;
     }
+    .marketplace_header p{
+      font-size: 18px;
+      
+    }
     
   }
   @media screen and (max-width: 528px){
     .marketplace_filter {
-      width: 160px;
+      width: 165px;
     }
     
   }
