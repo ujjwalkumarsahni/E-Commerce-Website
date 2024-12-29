@@ -1,0 +1,89 @@
+/* FilterComponent.css */
+/* .light-mode{
+  background-color: #ffffff;
+  color: #0F172A;
+}
+.dark-mode{
+  background-color: #334155;
+  color: #8291A5;
+} */
+  .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .filter-header h3 {
+    margin: 0;
+    font-size: 22px;
+    color: inherit;
+  }
+  
+  .clear-all {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .clear-all:hover {
+    background-color: #d9363e;
+  }
+  
+  .filter-section {
+    margin-bottom: 10px;
+  }
+  
+  .filter-section label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .filter-section select,
+  .filter-section input {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .filter-section select:focus,
+  .filter-section input:focus {
+    border-color: #1890ff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(24, 144, 255, 0.5);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .filter-component {
+      width: 100%;
+    }    
+    .filter-header {
+      margin-bottom: 16px;
+    }
+    
+    .filter-header h3 {
+      font-size: 20px;
+    }
+    
+    .clear-all {
+      
+      padding: 5px 11px;
+      font-size: 14px;
+    }
+    
+    .filter-section label {
+      font-size: 15px;
+    }
+  }
+  

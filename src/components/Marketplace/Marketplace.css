@@ -1,0 +1,67 @@
+.marketplace_container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  .marketplace_filter {
+    width: 250px;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    z-index: 100;
+    color: inherit;
+  }
+  
+  .marketplace_container.light-mode, 
+  .marketplace_filter.light-mode {
+    background-color: #ffffff;
+    color: #0F172A;
+  }
+
+  .marketplace_container.dark-mode,
+  .marketplace_filter.dark-mode {
+    background-color: #0F172A;
+    color: #ffffff;
+  }
+   
+  /* Product Section */
+  .marketplace_product {
+    flex: 1;
+    overflow-y: auto; 
+    height: 100vh; 
+  }
+  
+.marketplace_header {
+    padding: 12px 0px;
+    background-color: #198754;
+  }
+.marketplace_header {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+  }
+  .marketplace_card{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 768px){
+    .marketplace_filter {
+      width: 180px;
+      padding: 10px;
+    }
+    
+  }
+  @media screen and (max-width: 528px){
+    .marketplace_filter {
+      width: 160px;
+    }
+    
+  }
+  

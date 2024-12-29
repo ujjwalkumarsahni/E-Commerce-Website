@@ -1,0 +1,273 @@
+.effectDetail {
+    padding: 10px;
+    /* background-color: #c22525; */
+    height: 100vh;
+    /* background-color: #f9f9f9dc; */
+}
+.effectDetail.light-mode {
+    background-color: #ffffff;
+    color: #0F172A;
+}
+
+.effectDetail.dark-mode {
+    background-color: #232F3E;
+    color: #ffffff;
+}
+.effect-btn {
+    /* margin: 5px; */
+    padding: .8rem 2rem;
+    background-color: #e0e0e0;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease;
+}
+
+.productdetailscardContainer-effect {
+    display: flex;
+    /* background-color: #ffffff; */
+    gap: 20px;
+    padding: 20px 10px;
+    /* border-bottom: 0.5px solid rgba(0, 0, 1, 0.12); */
+}
+
+.left-effect {
+    width: 45%;
+}
+
+.image-effect {
+    width: 80%;
+    height: 200px;
+    background-color: #4c5057;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.btn-effect {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.add-btn {
+    width: 80px;
+    height: 35px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #d6d6d6;
+}
+
+.productdetail-effect {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 55%;
+}
+
+.product-title-effect {
+    height: 24px;
+    width: 60%;
+    background-color: #4c5057;
+    border-radius: 4px;
+}
+
+.product-price-effect {
+    height: 28px;
+    width: 40%;
+    background-color: #4c5057;
+    border-radius: 4px;
+}
+
+.star-rating-effect {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.star-rating-effect::before {
+    content: '★★★★★';
+    color: #4c5057;
+    font-size: 16px;
+}
+
+.some-detail-effect {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.some-detail-effect h4 {
+    background-color: #4c5057;
+    height: 16px;
+    width: 80%;
+    border-radius: 4px;
+}
+
+
+.______effe {
+    /* background-color: #ffffff; */
+    width: 100%;
+    margin: 0;
+}
+
+
+.rating-effect {
+    width: 30%;
+    background-color: #4c5057;
+    height: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+
+}
+
+.border-effect {
+    transition: background-color 0.3s ease;
+    border: #4c5057;
+    /* background-color: #e0e0e0; */
+    width: 94%;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.border-effect.light-mode {
+    background-color: #e0e0e0;
+    color: #0F172A;
+}
+
+.border-effect.dark-mode {
+    background-color: #0F172A;
+    color: #ffffff;
+}
+
+/* **************bannerSliderEffect*************** */
+.bannerSliderEffect {
+    width: 96%;
+    height: 500px;
+    margin: 0px auto;
+    background-color: #cacaca;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+    margin-top: 15px;
+}
+
+/* ***********************CardEffect**************************** */
+.CardEffect {
+    width: 200px;
+    height: 330px;
+    /* background-color: #cacaca; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.CardEffect.light-mode {
+    background-color: #524e4e;
+    color: #0F172A;
+}
+
+.CardEffect.dark-mode {
+    background-color: #0F172A;
+    color: #ffffff;
+}
+
+.CardEffect-container {
+    /* background-color: #ffffff; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border-radius: 20px;
+    padding: 10px 0px;
+}
+
+.CardEffect-container.light-mode {
+    background-color: #ffffff;
+    color: #0F172A;
+}
+
+.CardEffect-container.dark-mode {
+    background-color: #232F3E;
+    color: #ffffff;
+}
+
+.hearde-effectOfCard {
+    margin: 10px 28px;
+    width: 400px;
+    height: 30px;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+}
+.hearde-effectOfCard.light-mode {
+    background-color: #ffffff;
+    color: #0F172A;
+}
+
+.hearde-effectOfCard.dark-mode {
+    background-color: #0F172A;
+    color: #ffffff;
+}
+
+.effect-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1068px) {
+    .bannerSliderEffect {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .effect-btn {
+        padding: .8rem 2rem;
+    }
+
+    .productdetailscardContainer-effect {
+        flex-direction: column;
+    }
+
+    .left-effect {
+        width: 100%;
+        text-align: center;
+    }
+
+    .productdetail-effect {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .add-btn {
+        width: 60px;
+        height: 30px;
+    }
+
+    .product-title-effect,
+    .product-price-effect {
+        width: 80%;
+    }
+
+    .some-detail-effect h4 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .slider {
+        height: 250px;
+    }
+}

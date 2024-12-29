@@ -1,0 +1,42 @@
+.addToCardHeader {
+    
+    padding: 20px;
+    /* background-color: #fff; */
+}
+
+.Cart-header{
+    font-size: 1.9rem;
+    margin: 20px 0px;
+    text-align: center;
+    color: inherit;
+}
+.empty-img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.ul-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cart-summary {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.cart-summary h2{
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width:768px){
+    .Cart-header{
+        font-size: 1.6rem;
+    }
+    .empty-img{
+        height: 250px;
+    }
+}

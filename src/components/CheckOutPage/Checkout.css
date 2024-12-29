@@ -1,0 +1,340 @@
+.checkout-container {
+    max-width: 1260px;
+    padding: 10px;
+    margin: 0px auto;
+    font-family: Arial, sans-serif;
+  }
+  .address-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .add-new-address-btn{
+    border: none;
+    outline: none;
+    /* background-color: #ffffff; */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0056b3;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .delivery-address{
+    margin-top: 20px;
+    /* background-color: #ffffff; */
+    border-radius: 15px;
+    padding: 15px;
+  }
+  .address-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    margin: 10px 0px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  }
+  .address-card.light-mode {
+    background-color: #ffffff;
+    color: #232f3e;
+  }
+  
+  .address-card.dark-mode {
+    background-color: #232f3e;
+    color: #ffffff;
+  }
+  .address-card p {
+    margin: 5px 0 0 5px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .address-actions{
+    display: flex;
+  }
+  .icon-btn{
+    border: none;
+    outline: none;
+    margin:  0px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    /* background-color: #ffffff; */
+    transition: .3s ease;
+  }
+  .icon-btn:hover{
+    color: red;
+  }
+  .delete-icon{
+    position: absolute;
+    top: 5px;
+    right: 2px;
+  }
+  .deliver-btn {
+    margin-right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .deliver-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+
+  
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.address-form-container {
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.address-form-container.light-mode {
+  background-color: #ffffff;
+  color: #384352;
+}
+
+.address-form-container.dark-mode {
+  background-color: #384352;
+  color: #ffffff;
+}
+.address-form-container h3{
+  margin-bottom: 20px;
+}
+.address-form input,
+.address-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.address-form button {
+  background-color:orangered;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.address-form button:hover {
+  background-color: rgb(238, 77, 18);
+}
+.order-summary h2{
+  margin: 15px 5px;
+}
+
+
+
+
+
+.payment-main-container{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.wrraper-payment{
+  width: 60%;
+}
+
+.payment-container-div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+  padding: 20px;
+  /* width: 60%; */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  /* background-color: #ffffff; */
+}
+.payment-container-div.light-mode {
+  background-color: #ffffff;
+  color: #232f3e;
+}
+
+.payment-container-div.dark-mode {
+  background-color: #232f3e;
+  color: #ffffff;
+}
+.Payment{
+  margin: 15px 5px;
+}
+
+.payment-method {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.method {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.method input[type="radio"] {
+  margin-right: 10px;
+}
+
+.method label {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.upi-options {
+  /* margin-top: 10px; */
+  padding-left: 40px;
+}
+
+.upi-options label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.upi-options input[type="text"] {
+  /* margin-top: 5px; */
+  padding: 5px;
+  /* width: 100%; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.upiid{
+  display: flex;
+  gap: 5px;
+}   
+
+.upi-options input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.upi-options svg {
+  margin-right: 5px;
+}
+.payment-details{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.ddddd-h3{
+  margin-bottom: 10px;
+}
+.card-dd{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.detail-form-card input{
+  padding: 7px;
+  font-size: 16px;
+  margin-left: 6px ;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.popup-content.light-mode {
+  background-color: #ffffff;
+  color: #384352;
+}
+
+.popup-content.dark-mode {
+  background-color: #384352;
+  color: #ffffff;
+}
+
+.close-popup-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.close-popup-btn:hover {
+  background-color: #0056b3;
+}
+.continue-btn {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.continue-btn:hover {
+  background-color: darkgreen;
+}
+
+
+@media screen and (max-width: 768px){
+  .address-header h2{
+    font-size: 19px;
+  }  
+  .add-new-address-btn{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .order-summary h2{
+    font-size: 19px;
+  }
+  .delivery-address{
+    padding: 7px;
+  }
+  .Payment{
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,32 @@
+.home-container {
+    width: 97%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.home-container.light-mode {
+    background-color: #ffffff;
+    color: #0F172A;
+}
+
+.home-container.dark-mode {
+    background-color: #232F3E;
+    color: #ffffff;
+}
+
+
+.my-custom-carousel {
+    z-index: 40;
+    margin-top: 10px;
+}
+
+
+.home-card-title {
+    padding-bottom: 10px;
+
+}

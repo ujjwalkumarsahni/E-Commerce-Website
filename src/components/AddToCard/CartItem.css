@@ -1,0 +1,138 @@
+.cart-containar{
+    position: relative;
+    padding: 13px;
+    /* background-color: #ffffff; */
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cart-containar.light-mode {
+    background-color: #ffffff;
+    color: #232f3e;
+  }
+  
+  .cart-containar.dark-mode {
+    background-color: #232f3e;
+    color: #ffffff;
+  }
+.delete-btn{
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    color: inherit;
+}
+.cart-headeer-container{
+    width: 100%;
+
+}
+.cart-header{
+    display: flex;
+    justify-content: space-around;
+}
+.product-detail-header{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.product-detail-header h4{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.product-detail-containar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.other-detail-header{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.other-header{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 50px; */
+    text-align: center;
+}
+.other-header h4{
+    font-size: 1.3rem;
+}
+.quantity-total{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+/* .containte{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+.product-image{
+    width: 200px;
+}
+.product-image img{
+    width: 100%;
+}
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.product-title{
+    font-size: 1.5rem;
+}
+.buy-btn{
+    display: flex;
+    justify-content: end;
+}
+.total-price p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px){
+    .product-detail-header h4{
+        font-size: 1.1rem;
+    }
+    .other-header h4{
+        font-size: 1.1rem;
+    }
+    .product-detail{
+        gap: 15px;
+    }
+    .cart-header{
+        flex-direction: column;
+     }
+     .product-detail-header{
+        width: 100%;
+    }
+    .quantity-total{
+        margin-top: 0px;
+    }
+    .other-detail-header{
+        width: 100%;
+        gap: 5px;
+    }
+    .total-price p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 500px){
+    .product-title{
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+    .product-price{
+        font-size: 1rem;
+    } 
+      .product-rating {
+        margin: 0px 0;
+      }
+      .original-price {
+        font-size: 0.8rem;
+      }
+}

@@ -1,0 +1,40 @@
+.quantity{
+    display: flex;
+    gap: 8px;
+}
+.quantityBtn{
+    background-color: #FB641B;
+    padding: 5px 7px ;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.quantityValue{
+    font-size: 17px;
+    font-weight: bold;
+}
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+  }
+  
+  .delete-btn:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+  }
+  
+  .delete-btn:active {
+    transform: scale(0.9);
+  }
+  
+  .delete-btn:focus {
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+  }
+  
