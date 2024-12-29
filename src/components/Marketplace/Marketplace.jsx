@@ -129,7 +129,7 @@ const Marketplace = () => {
           <p>Buy Now</p>
           <div className="hamburger-filter" onClick={handFilterToggle}>
             {filterToggle ? (
-              <FaTimes className="hamburger-icon-filter" />
+              <FaTimes className="hamburger-icon-filter-cross" />
             ) : (
               <FaBars className="hamburger-icon-filter" />
             )}

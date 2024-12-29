@@ -4,12 +4,14 @@
     overflow: hidden;
   }
   .marketplace_filter {
+    position: fixed;
     width: 250px;
     border-right: 1px solid #ddd;
     padding: 20px;
-    z-index: 100;
+    z-index: 300;
     color: inherit;
     display: none;
+    height: 100vh;
   }
   .marketplace_filter.visible{
     display: block;
@@ -54,6 +56,12 @@
     top: -19px;
     cursor: pointer;
   }
+  .hamburger-icon-filter-cross{
+    position: absolute;
+    right: 12px;
+    top: -20px;
+    cursor: pointer;
+  }
   .marketplace_card{
     padding: 10px;
     display: flex;
@@ -66,6 +74,20 @@
     .marketplace_header p{
       font-size: 18px;
       
+    }
+    .marketplace_filter {
+      width: 200px;
+      padding: 15px;
+    }
+    
+  }
+  @media screen and (max-width: 568px){
+    .marketplace_header p{
+      font-size: 17px;
+      
+    }
+    .marketplace_filter {
+      width: 180px;
     }
     
   }
