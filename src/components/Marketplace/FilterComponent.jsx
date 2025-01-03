@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./FilterComponent.css";
 
-
-// Categories for the dropdown
 const categories = [
   "beauty",
   "fragrances",
@@ -72,7 +70,6 @@ const FilterComponent = ({ onFilterChange }) => {
         </button>
       </div>
 
-      {/* Category Filter */}
       <div className="filter-section">
         <label>Category:</label>
         <select 
@@ -90,7 +87,6 @@ const FilterComponent = ({ onFilterChange }) => {
         </select>
       </div>
 
-      {/* Price Range Filter */}
       <div className="filter-section">
         <label>Price:</label>
         <select
@@ -106,7 +102,6 @@ const FilterComponent = ({ onFilterChange }) => {
         </select>
       </div>
 
-      {/* Gender Filter */}
       <div className="filter-section">
         <label>Gender:</label>
         <select
@@ -122,7 +117,7 @@ const FilterComponent = ({ onFilterChange }) => {
         </select>
       </div>
 
-      {/* Discount Filter */}
+    
       <div className="filter-section">
         <label>Discount:</label>
         <input
@@ -133,7 +128,7 @@ const FilterComponent = ({ onFilterChange }) => {
         />
       </div>
 
-      {/* Customer Ratings Filter */}
+    
       <div className="filter-section">
         <label>Customer Ratings:</label>
         <select
@@ -150,7 +145,7 @@ const FilterComponent = ({ onFilterChange }) => {
         </select>
       </div>
 
-      {/* Availability Filter */}
+     
       <div className="filter-section">
         <label>Availability:</label>
         <select
