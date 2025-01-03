@@ -51,11 +51,13 @@ const MultiCursorProduct = ({ title, category }) => {
       slidesToSlide: 1,
     },
     mobile: {
-      breakpoint: { max: 750, min: 400 },
+      breakpoint: { max: 750, min: 0 },
       items: 2,
       slidesToSlide: 1,
     },
   };
+
+  console.log(filteredProducts)
 
   return (
     <>
